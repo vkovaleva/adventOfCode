@@ -1,0 +1,26 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier --config .prettierrc.json ./**/*.ts --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0"
+  }
+}
