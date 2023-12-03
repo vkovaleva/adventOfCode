@@ -3,7 +3,7 @@ import { getInput } from '../helpers';
 
 const input = getInput(path.resolve(__dirname, './input.txt'));
 
-function findSumOfPowers(input: string) {
+function findSumOfPowers(input: string): number {
   const strArr = input.split('\n');
   let powerSum = 0;
 
@@ -22,8 +22,7 @@ function getSetPower(cubeSet: string): number {
     blue: 0,
   };
   for (const [key] of Object.entries(cubes)) {
-    let numbersOfDefiniteColor: number[] | undefined = [];
-    numbersOfDefiniteColor = cubeSet
+    const numbersOfDefiniteColor = cubeSet
       .match(new RegExp('\\b\\d+\\s' + key + '\\b', 'g'))
       ?.toString()
       .match(num)
